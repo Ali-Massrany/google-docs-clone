@@ -1,15 +1,17 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: "gdocsclone.firebaseapp.com",
-  projectId: "gdocsclone",
-  storageBucket: "gdocsclone.appspot.com",
-  messagingSenderId: "531727213919",
-  appId: process.env.APP_ID
+  apiKey: "AIzaSyC5q864mdH3qsbSbr-xKWIzHsWvEwZ9RS0",
+  authDomain: "drive-clone-c3c62.firebaseapp.com",
+  projectId: "drive-clone-c3c62",
+  storageBucket: "drive-clone-c3c62.appspot.com",
+  messagingSenderId: "696876222450",
+  appId: "1:696876222450:web:1862ff432e6e8b7026cd6b",
 };
 
-const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
+const app = !firebase.apps.length
+  ? firebase.initializeApp(firebaseConfig)
+  : firebase.app();
 
 const db = app.firestore();
 
